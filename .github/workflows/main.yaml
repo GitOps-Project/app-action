@@ -105,6 +105,6 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
           cluster-name: ${{ env.EKS_CLUSTER }}
           namespace: default
-          chartpath: ./helm/vprofilecharts
+          chart-path: ./helm/vprofilecharts
           values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }},apptag=${{ github.run_number }}
           name: vprofile-stack
