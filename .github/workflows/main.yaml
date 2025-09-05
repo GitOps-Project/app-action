@@ -55,10 +55,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Login to AWS ECR
-        id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
       - name: Build, Tag, and Push image to ECR
         uses: appleboy/docker-ecr-action@master
         with:
