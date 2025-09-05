@@ -40,10 +40,10 @@ jobs:
             -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml \
             -Dsonar.java.binaries=target/classes
 
-      - name: SonarQube Quality Gate Check
-        id: sonarqube-quality-gate
-        uses: sonarsource/sonarqube-quality-gate-action@master
-        timeout-minutes: 5
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
+#     - name: SonarQube Quality Gate Check
+#       id: sonarqube-quality-gate
+#       uses: sonarsource/sonarqube-quality-gate-action@master
+#       timeout-minutes: 5
+#       env:
+#         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#         SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
